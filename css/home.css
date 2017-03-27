@@ -1,0 +1,8 @@
+#switcher{
+    width: 50px;
+    padding:10px;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    color: #000;
+}
