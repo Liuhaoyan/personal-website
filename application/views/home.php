@@ -99,6 +99,62 @@
 
 
     <!--------------ABOUT ME结束-------------->
+    <!--------------SKILL开始-------------->
+    <div id="skill-sec">
+        <div class="overlayer">
+            <div class="container">
+                <div class="row pad-top-bottom">
+                    <div class="col-lg-2 col-md-2 col-sm-2 text-center">
+                        <span class="chart" data-percent="75">
+                            <span class="percent">
+                                "75"
+                            </span>
+                            <canvas height="150" width="150"></canvas>
+                        </span>
+                        <h4>JQUERY</h4>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 text-center">
+                        <span class="chart" data-percent="95">
+                            <span class="percent">
+                                "95"
+                            </span>
+                            <canvas height="150" width="150"></canvas>
+                        </span>
+                        <h4>PHP</h4>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 text-center">
+                        <span class="chart" data-percent="65">
+                            <span class="percent">
+                                "65"
+                            </span>
+                            <canvas height="150" width="150"></canvas>
+                        </span>
+                        <h4>NODEJS</h4>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 text-center">
+                        <span class="chart" data-percent="80">
+                            <span class="percent">
+                                "80"
+                            </span>
+                            <canvas height="150" width="150"></canvas>
+                        </span>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <h1>CHECKOUT MY</h1>
+                        <h1>SKILL SET</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nulla pretium lectus vel justo iaculis blandit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------SKILL结束-------------->
+
 <script src="assets/js/jquery-1.12.4.js"></script>
 <script src="assets/js/active.js"></script>
 </body>

@@ -213,6 +213,59 @@ img{
     padding: 10px 0px 10px 0px;
     margin:0 0 10px;
 }
+
+
+#skill-sec{
+    background: url(../img/skill.jpg);
+    padding:0;
+    background-attachment: fixed;
+}
+#skill-sec .overlayer{
+    padding:50px;
+    background:url(../img/15.png);
+    min-height:450px;
+
+}
+#skill-sec .overlayer .container{
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+#skill-sec .pad-top-bottom{
+    padding-top:20px;
+    padding-bottom:30px;
+}
+.row{
+    margin-right:-15px;
+    margin-left:-15px;
+}
+.chart{
+    position: relative;
+    display: inline-block;
+    width:150px;
+    height:150px;
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align: center;
+}
+.chart canvas{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.percent{
+    display: inline-block;
+    line-height:150px;
+    z-index: 2;
+    font-size: 2rem;
+}
+p{
+    line-height: 30px;
+    font-size: 16px;
+    padding:10px 0px 10px 0px;
+    margin:0 0 10px;
+}
 @media (min-width:768px) {
     .container{
         width:750px;
