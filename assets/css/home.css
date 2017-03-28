@@ -1,0 +1,233 @@
+#switcher{
+    width: 50px;
+    /*padding:10px;*/
+    position: fixed;
+    top: 90px;
+    left: 0;
+    color: #000;
+    z-index: 2000;
+    background: #fff;
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -ms-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out;
+
+}
+#switcher #switch-panel{
+    width:34px;
+    height:38px;
+    position: absolute;
+    right:-34px;
+    z-index: 1990;
+    display: block;
+    background: #fff;
+    cursor: pointer;
+}
+#switcher #switch-panel #icon{
+    background:url(../img/display.png) no-repeat;
+    display: block;
+    width:34px;
+    height:34px;
+    margin-top:4px;
+
+}
+#switcher p{
+    line-height: 30px;
+    padding:10px 0px 10px 0px;
+    text-align: center;
+}
+#switcher .lists li{
+    float: left;
+    display: block;
+    margin-bottom: 2px;
+    margin-right:6px ;
+    padding: 0px 10px 0px 10px;
+}
+#switcher .lists li a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+#switcher .lists li a.pink{
+    background-color: rgb(255,5,85) ;
+}
+#switcher .lists li a.green{
+    background-color: #00ADAD ;
+}
+#switcher .lists li a.blue{
+    background-color: #2549BB ;
+}
+#switcher .lists li a.brown{
+    background-color: #9B8E00 ;
+}
+#home-banner{
+    background: url(../img/home.jpg) no-repeat center center;
+    color:#fff;
+    background-attachment: fixed;
+}
+#home-banner .overlayer{
+    background: rgba(0,0,0,.8);
+    height: 790px;
+}
+#home-banner .overlayer .container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /*height: 606px;*/
+    padding-top:100px;
+}
+ .row{
+    margin-left:-15px;
+    margin-right:-15px;
+}
+.text-center{
+    text-align: center;
+}
+#home-banner .main-img{
+    background: url(../img/sad.jpg) no-repeat;
+    border:5px solid rgb(255,15,101);
+    max-height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#home-banner .main-img:hover{
+    background: url(../img/smile.jpg) no-repeat;
+}
+img{
+    vertical-align: middle;
+}
+
+.banner-title h1{
+    font-weight: 900;
+    padding:20px 0 0 0;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom:10px;
+    line-height: 1.1;
+}
+ .banner-information h3{
+    padding: 0 0 30px 0;
+     font-weight: 400;
+    color: #fff;
+    font-size: 30px;
+}
+ .btn-lg{
+    padding:10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+
+}
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    white-space:nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border:1px solid transparent;
+}
+.first span{
+    background: url(../img/info.png) no-repeat 16px 0;
+    display: block;
+    width:60px;
+    height: 60px;
+    border:3px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.first h3{
+    padding:5px 0px;
+    color: #fff;
+    font-weight:700;
+}
+.second span{
+    background: url(../img/card_travel.png) no-repeat 4px 0;
+    display: block;
+    width:60px;
+    height: 60px;
+    border:3px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+
+}
+.second h3{
+    padding:5px 0px;
+    color: #fff;
+    font-weight:700;
+}
+.three span{
+    background: url(../img/recycle.png) no-repeat 2px 0;
+    display: block;
+    width:60px;
+    height: 60px;
+    border:3px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.three h3{
+    padding:5px 0px;
+    color: #fff;
+    font-weight:700;
+}
+.four span{
+    background: url(../img/paperplane.png) no-repeat ;
+    display: block;
+    width:60px;
+    height: 60px;
+    border:3px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.four h3{
+    padding:5px 0px;
+    color: #fff;
+    font-weight:700;
+}
+
+
+#about-sec .container .left{
+    margin-top: 60px;
+}
+#about-sec .container h1{
+    font-weight: 800;
+    color: rgb(255,15,101);
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#about-sec .container .color-strip{
+    margin:20px 0px 30px 0px;
+    max-width:230px;
+    height:2px;
+    border-top: 0;
+    background: #c4e17f;
+    border-radius: 5px;
+}
+#about-sec .container p{
+    line-height: 30px;
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+    margin:0 0 10px;
+}
+@media (min-width:768px) {
+    .container{
+        width:750px;
+
+    }
+
+}
+@media (max-width: 768px){
+    #home-banner{
+        height:1488px;
+    }
+    #home-banner .overlayer{
+        height:1488px;
+    }
+    #home-banner .overlayer .container{
+        height:1688px;
+    }
+}
