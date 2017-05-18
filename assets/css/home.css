@@ -1,9 +1,12 @@
+a{
+    text-decoration: none;
+}
 #switcher{
     width: 50px;
-    /*padding:10px;*/
+    padding:10px;
     position: fixed;
+    left:-50px;
     top: 90px;
-    left: 0;
     color: #000;
     z-index: 2000;
     background: #fff;
@@ -34,7 +37,7 @@
 }
 #switcher p{
     line-height: 30px;
-    padding:10px 0px 10px 0px;
+    padding:5px 0px 5px 0px;
     text-align: center;
 }
 #switcher .lists li{
@@ -42,7 +45,7 @@
     display: block;
     margin-bottom: 2px;
     margin-right:6px ;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 5px 0px 5px;
 }
 #switcher .lists li a{
     display: inline-block;
@@ -87,14 +90,28 @@
     text-align: center;
 }
 #home-banner .main-img{
-    background: url(../img/sad.jpg) no-repeat;
+    background: url(../img/2.jpg) no-repeat;
     border:5px solid rgb(255,15,101);
-    max-height: 200px;
+    width:200px;
+    height:200px;
+    /*max-height: 200px;*/
     border-radius: 50%;
     cursor: pointer;
 }
 #home-banner .main-img:hover{
-    background: url(../img/smile.jpg) no-repeat;
+    background: url(../img/1.jpg) no-repeat;
+}
+#home-banner .main-img-2 {
+    width:200px;
+    height:200px;
+    /*max-height:200px;*/
+    border:5px solid rgb(255, 15, 101);
+    content:url('../img/1.jpg');  /*SMILE IMAGE URL  - RIGHT SIDE IMAGE*/
+    cursor:pointer;
+}
+#home-banner .main-img-2:hover {
+    content:url('../img/2.jpg');  /*SAD IMAGE URL ON HOVER - RIGHT SIDE IMAGE*/
+    cursor:pointer;
 }
 img{
     vertical-align: middle;
@@ -129,6 +146,11 @@ img{
     vertical-align: middle;
     cursor: pointer;
     border:1px solid transparent;
+    background: transparent;
+    color: #ffffff;
+}
+.btn:hover{
+    color: #fff;
 }
 .first span{
     background: url(../img/info.png) no-repeat 16px 0;
@@ -189,10 +211,10 @@ img{
 }
 
 
-#about-sec .container .left{
+#about-sec .container.left{
     margin-top: 60px;
 }
-#about-sec .container h1{
+#about-sec  h1{
     font-weight: 800;
     color: rgb(255,15,101);
     font-size: 36px;
@@ -236,6 +258,17 @@ img{
     padding-top:20px;
     padding-bottom:30px;
 }
+.skill-detail{
+    color: #ffffff;
+}
+.spot{
+    width:8px;
+    height:8px;
+    display: inline-block;
+    background: #f00;
+    border-radius: 50%;
+    margin-left: -5px;
+}
 .row{
     margin-right:-15px;
     margin-left:-15px;
@@ -259,6 +292,11 @@ img{
     line-height:150px;
     z-index: 2;
     font-size: 2rem;
+    color: #ffffff;
+}
+.percent-icon{
+    font-size:2rem;
+    color: #ffffff;;
 }
 p{
     line-height: 30px;
@@ -266,13 +304,156 @@ p{
     padding:10px 0px 10px 0px;
     margin:0 0 10px;
 }
-@media (min-width:768px) {
-    .container{
-        width:750px;
+#skill-sec h4{
+    font-size:18px;
+    font-weight: 600;
+}
 
-    }
+
+/********hobby***********/
+#hob-sec {
+    padding: 40px 0px 40px 0px;
+    position: relative;
+}
+#selected-content{
+    height:350px;
+}
+#travel-imgs{
+    padding:20px 0 20px 0;
+    position: absolute;
 
 }
+#sport-imgs{
+    padding:20px 0 20px 0;
+    position: absolute;
+    display: none;
+}
+#eat-imgs{
+    padding:20px 0 20px 0;
+    position: absolute;
+    display: none;
+}
+#travel-imgs img{
+    width:390px;
+    height:250px;
+
+}
+#sport-imgs img{
+    width:390px;
+    height:250px;
+
+}
+#eat-imgs img{
+    width:390px;
+    height:250px;
+
+  
+}
+.selected{
+    display: block;
+}
+
+/**********hobby*************/
+
+/**********profile*************/
+p{
+    line-height: 30px;
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+}
+.portfolio-sec-wrap{
+    cursor: pointer;
+}
+.portfolio-sec-wrap .overlay {
+    position: absolute;
+    /*padding-left: -10px;*/
+    /*padding-right:-10px;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 0;
+    background-color: rgb(255, 15, 101);
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    padding: 30px;
+}
+.img-responsive{
+    margin-bottom: 5px;
+    width:100%;
+    height: 100%;
+    display: block;
+}
+
+/**********profile*************/
+
+/***************contact me开始*******************/
+#hire-sec{
+    margin-top: 20px;
+    background: url(../img/hire.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+
+}
+#hire-sec .overlay{
+    background: rgba(0,0,0,.8);
+    min-height: 570px;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    line-height: 30px;
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+}
+#hire-sec .form-control {
+    background-color: transparent;
+}
+#attention{
+    border: none;
+    background: transparent;
+    color:red;
+    width:100%;
+    text-indent: 10px;
+    margin-top: 5px;
+    display: none;
+}
+/***************contact me结束*******************/
+
+/***************up to top 开始*******************/
+a.scrollup {
+    background: rgb(255, 15, 101);
+    height: 32px;
+    width: 32px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    opacity: 0.7;
+}
+#top{
+    background: url(../img/chevron-up.png) no-repeat center center;
+    z-index: 2;
+    width:32px;
+    height:32px;
+    display: block;
+}
+/***************up to top 结束*******************/
 @media (max-width: 768px){
     #home-banner{
         height:1488px;
@@ -283,4 +464,221 @@ p{
     #home-banner .overlayer .container{
         height:1688px;
     }
+    #hob-sec{
+        display: flex;
+    }
+    #selected-content{
+        height:800px;
+        -webkit-box-flex: 1;
+        margin-left: -100px;
+    }
+    #selected-content img{
+        margin-bottom: 5px;
+    }
+    #profil-sec{
+        display: flex;
+    }
+    #project{
+        height:100%;
+        -webkit-box-flex: 1;
+        /*margin-bottom: 10px;*/
+        margin:10px  auto;
+    }
+    #project-content{
+        width:90%;
+        height:800px;
+        margin:0 auto;
+        margin-bottom: 20px;
+    }
+    #blog img{
+        width:100%;
+        height:200px;
+        /*margin:0 50px;*/
+    }
+
 }
+@media screen and (min-width: 768px) and (max-width: 1170px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    #selected-content{
+        height: 250px;
+    }
+    #selected-content img{
+        float: left;
+        width:33%;
+        height: 200px;
+        margin-bottom: 5px;
+    }
+    /*#portfolio-sec #blog{*/
+        /*width:290px;*/
+        /*height: 220px;*/
+        /*!*margin:0 auto;*!*/
+    /*}*/
+    /*#portfolio-sec #blog img{*/
+        /*width:290px;*/
+        /*height: 220px;*/
+        /*margin:0 auto;*/
+    /*}*/
+    /*#project{*/
+        /*width:100%;*/
+        /*height:1400px;*/
+    /*}*/
+    /*#project-content{*/
+        /*width: 73%;*/
+        /*height:1300px;*/
+        /*padding:40px;*/
+        /*margin:0 auto;*/
+
+    /*}*/
+   /*.grid figure{*/
+       /*margin-right: 10px;*/
+   /*}*/
+    /*#project-content img{*/
+        /*width:33%;*/
+        /*height: 200px;*/
+        /*margin:0 auto;*/
+    /*}*/
+
+}
+
+/***************新的project样式开始*******************/
+.grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    /*margin: 10px 1%;*/
+    min-width: 290px;
+    max-width: 320px;
+    max-height:220px;
+    width: 48%;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+.grid figure figcaption {
+    position: absolute;
+    top: -10px;
+    left:30px;
+    /*padding: 2em;*/
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}.grid figure figcaption::before,
+ .grid figure figcaption::after {
+     pointer-events: none;
+ }
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+figure.effect-sadie figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0,50%,0);
+    transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+    transition: transform 0.35s, color 0.35s;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0,10px,0);
+    transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie:hover h2 {
+    color: #fff;
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/***************新的project样式结束*******************/
